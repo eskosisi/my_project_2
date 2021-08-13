@@ -14,17 +14,34 @@ body, ul, li, h1, h2, h3, p, button{
     margin: 0 auto;
 }
 
+.header {
+    background: #2D303A;
+}
+
+.header__nav {
+    padding: 25px 12px 10px 10px;
+}
+
 .header__wrapper {
     display: flex;
     justify-content: space-between;
-    height: 89px;
-    background: #2D303A;
+    max-height: 95px;
     align-items:center;
-    border-bottom: 6px solid #2D303A;
+    border-bottom: 6px solid #2D3042;
 }
 
-.logo__header {
-    margin: 40px;
+.logo{
+    padding: 40px;
+    letter-spacing: -0.03em;
+}
+
+.logo h1 {
+    font-size: 25px;
+    color: white;
+}
+
+.logo span {
+    color: tomato;
 }
 
 .logo__header:hover {
@@ -39,7 +56,7 @@ body, ul, li, h1, h2, h3, p, button{
     justify-content: space-around;
     color:white;
     font-size: 12px;
-    line-height: 14,4px;
+    line-height: 14px;
     letter-spacing: -0.035em;
     font-weight: bold;
 }
@@ -53,7 +70,7 @@ body, ul, li, h1, h2, h3, p, button{
     color:#F06C64;
 }
 
-.page__first__wrapper {
+.marvel-phones__wrapper {
     height: 594px;
     background: #F06C64;
     border-bottom: 6px solid #F06C64;
@@ -66,70 +83,103 @@ body, ul, li, h1, h2, h3, p, button{
     padding: 62px;
 }
 
+.phone-vertical {
+    background: url('./for_pics/phone-vertical-shadow.png') no-repeat;
+    padding-bottom: 20px;
+    padding-right: 25px;
+}
+
+.phone-vertical__screen {
+    background: url('./for_pics/phone-vertical.png') no-repeat;
+    height: 458px;
+    width: 216px;
+}
+
+.phone-vertical__screen img {
+    position: relative;
+    left: 15px;
+    top: 65px;
+}
+
+.phone-horizontal {
+    background: url('./for_pics/phone-horizontal-shadow.png') no-repeat;
+    padding-bottom: 20px;
+    padding-right: 25px;
+}
+
+.phone-horizontal__screen {
+    background: url('./for_pics/phone-horizontal.svg') no-repeat;
+    width: 483px;
+    height: 240px;
+}
+
+.phone-horizontal__screen img {
+    position: relative;
+    left: 60px;
+    top: 13px;
+}
+
 . slider__item__2 {
     background: #648BF0;
 }
 
-.page__second__wrapper {
+.our-services__wrapper {
     background: #F2F2F2;
     padding: 40px;
     border-bottom: 6px solid #f2f2f2;
 }
 
-.text {
+.our-services__wrapper h2, p{
     color:#666D89;
     padding-bottom: 20px;
 }
 
-.page__second h2 {
+.our-services__wrapper p {
+    font-size: 18px;
+}
+
+.our-services h2 {
     font-size: 30px;
     line-height: 36px;
 }
 
-.page__second p {
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.text__box {
+.description-box{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.text__box__item {
+.description-box__item {
     display: flex;
     width: 300px;
     height: 105px;
-    margin-top: 20px;
-    text-align: justify;
+    padding-top: 20px;
 }
 
-.text__box__item p {
+.description-box__item p, h3 {
     font-size: 12px;
     line-height: 22px;
     color:#666D89;
 }
 
-.text__box__item h3 {
-    font-size: 18px;
-    line-height: 22px;
+.description-box__item h3 {
     font-weight: 900;
+    font-size: 18px;
 }
 
-.text__box__image {
+.description-box__image {
     width: 80px;
 }
 
-.text__box__image:hover {
+.description-box__image:hover {
     width: 100px;
 }
 
-.text__inside__box {
+.description-box__item__text {
     width: 220px;
 }
 
-.page__third__wrapper {
+.portfolio__wrapper {
     background: #2D303A;
     padding: 40px;
     padding-top: 65px;
@@ -137,14 +187,14 @@ body, ul, li, h1, h2, h3, p, button{
     border-bottom: 6px solid #2D303A;
 }
 
-.portfolio__text h2 {
+.portfolio h2 {
     font-weight: 900;
     color: #666D89;
     font-size: 30px;
     line-height: 36px;
 }
 
-.portfolio__text p {
+.portfolio p {
     padding: 7px;
     padding-left: 0;
     color: #767E9E;
@@ -154,8 +204,7 @@ body, ul, li, h1, h2, h3, p, button{
 
 .portfolio__button {
     height: 25px;
-    text-align: center;
-    padding: 5px;
+    padding: 4px;
     margin: 5px;
     font-size: 12px;
     background: transparent;
@@ -189,7 +238,192 @@ body, ul, li, h1, h2, h3, p, button{
     opacity: .5;
 }
 
-.page__fourth__wrapper {
+.about-us__wrapper {
+    background: #F2F2F2;
     padding: 40px;
 }
 
+.about-us__wrapper h2, p {
+    color:#666D89;
+    padding-bottom: 20px;
+}
+
+.about-us__wrapper h2 {
+    font-size: 30px;
+    line-height: 36px;
+    
+}
+
+.about-us__wrapper p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about-us__profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us__profile__item {
+    max-width: 300px;
+    height: 443px;
+}
+
+.about-us__profile__item h3 {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.about-us__profile__item p {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.about-us_profile__item__buttons img {
+    margin: 3px;
+}
+
+.about-us_profile__item__buttons img:hover {
+    cursor: pointer;
+}
+
+.geta-quote__wrapper {
+    padding: 40px;
+    background: #F06C64;
+    border-bottom: 6px solid #F06C64;
+}
+
+.geta-quote__wrapper h2 {
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
+    color:#F0D8D9;
+}
+
+.geta-quote__wrapper p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    color:#F0D8D9;
+}
+
+.geta-quote__feedback {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.geta-quote__contacts h3 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    color:#F0D8D9;
+}
+
+.geta-quote__contacts span {
+    font-size: 12px;
+    line-height: 22px;
+    color: #F0D8D9;
+}
+
+.geta-quote__inputForms input {
+    width: 620px;
+    height: 38px;
+    font-size: 12px;
+    line-height: 22px;
+    background: #D6564F;
+    border: transparent;
+    border-radius: 6px;
+    padding-left: 14px;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.geta-quote__inputForms input ::placeholder {
+    color: white;    
+}
+
+.geta-quote__inputForms input:nth-child(4) {
+    height: 159px;
+}
+
+.geta-quote__inputForms {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.geta-quote__inputForms input::-webkit-input-placeholder {
+    color: #F48C8F;
+}
+
+.geta-quote__contacts__address__item {
+    display: flex;
+    font-size: 12px;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+
+.geta-quote__address {
+    padding-top: 15px;
+}
+
+.geta-quote__feedback button {
+    background: #FBC65F;
+    color: #886A30;
+    width: 136px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 17px;
+    border: transparent;
+    border-radius: 4px;
+}
+
+.geta-quote__feedback button:hover {
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+}
+
+.geta-quote__contacts__address__item img {
+    padding-right: 13px;
+}
+
+footer {
+    background: #2D303A;
+}
+
+.footer__wrapper {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__wrapper p {
+    padding: 30px;
+}
+
+.footer__wrapper__pics {
+    padding-right: 22px;
+}
+
+.footer__wrapper img {
+    padding: 4px;
+}
+
+.footer__wrapper img:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px){
+    body {
+        max-width: 800px;
+        }
+        body h1, h2, h3, span, p {
+            font-size: smaller;
+        }
+}
